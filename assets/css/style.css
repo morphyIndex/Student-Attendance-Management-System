@@ -1,0 +1,379 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Custom CSS */
+:root {
+    --main-color: #328BB1;
+    --second-color: white;
+    --footer-color: #005275;
+}
+
+* {
+    font-family: "Work Sans", sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) white;
+    scroll-behavior: smooth;
+}
+
+html,body {
+    overflow-x: hidden;
+}
+
+/* Box Shadow */
+.boxShadow {
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover Effect */
+
+.hover-effect{
+    padding: 5px 10px;
+    position: relative;
+}
+
+.hover-effect::after {
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+
+.hover-effect:hover::after {
+    width: 100%;
+}
+
+/* Navigation Style */
+#nav {
+    background-color: var(--main-color);
+}
+
+#nav a img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+#nav .nav-link {
+    margin: 0 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+
+#nav .navbar-nav button {
+    width: 100px;
+    height: 39px;
+    border: transparent;
+    font-weight: bold;
+    outline: none;
+    transition: .2s;
+}
+
+#nav .navbar-nav button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px var(--main-color);
+    background-color: var(--second-color);
+}
+
+#nav .navbar-toggler {
+    padding: 5px 8px;
+}
+
+#nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#nav .nav-link.active{
+    opacity: .7;
+}
+
+/* Home Section Style */
+#home {
+    background-color: var(--second-color);
+    height: 520px;
+    width: 100%;
+}
+
+#home .container, #home .row {
+    height: inherit
+}
+
+#home img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#home button {
+    width: 175px;
+    height: 45px;
+    border: transparent;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+#home button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(26, 114, 176, 0.4);
+    background-color: var(--second-color);
+    color: black;
+}
+
+#home .home-right {
+    text-align: right;
+}
+
+/* Priorities section style */
+#priorities {
+    background-color: var(--main-color);
+}
+
+#priorities .row {
+    justify-content: space-between;
+}
+
+#priorities .card {
+    padding: 0;
+    width: 269px;
+    height: auto;
+}
+
+#priorities .card-title {
+    font-size: 17px;
+    font-weight: bold;
+    border-left: 2px solid black;
+}
+
+#priorities .card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #777676;
+}
+
+/* Activities section style */
+#activities {
+    background-color: var(--second-color);
+}
+
+#activities .card-holder {
+    width: 519px;
+    height: 208.506px;
+    padding: 0;
+    border: 1px solid black;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#activities .card-holder .row {
+    height: 100%;
+}
+
+#activities .card-holder h1 {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+#activities .card-holder p {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#activities .card-holder img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Modal section style */
+.modal {
+    min-height: 100vh;
+}
+
+.modal-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    width: 600px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+  }
+
+.modal-body p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* FAQ Section Style */
+#faq {
+    background-color: var(--second-color);
+    min-height: calc(100vh - 97px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: var(--main-color);
+    color: black;
+  }
+
+#faq  .accordion-button.collapsed {
+    background-color: var(--main-color);
+}
+
+
+#faq .accordion-button:focus {
+    box-shadow: none;
+    color: black;
+}
+
+#faq p, #faq .accordion-button {
+    font-size: 18px;
+    color: black;
+} 
+
+/* About Us Section */
+#about {
+    min-height: calc(100vh - 97px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#about .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about .about-right h1 {
+    color: white;
+}
+
+#about .about-right p {
+    font-size: 14px;
+}
+
+/* Footer section Style */
+#footer {
+    background-color: var(--footer-color);
+    height: 360px;
+    width: 100%;
+    position: relative;
+}
+
+#footer h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#footer li {
+    list-style-type: none;
+}
+
+#footer li a {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#footer li a:hover {
+    color: var(--main-color);
+}
+
+#footer .social-links {
+    justify-content: end;
+}
+
+#footer .social-links-holder {
+    width: 125px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer .copyright {
+    height: 56px;
+    background-color: var(--main-color);
+    color: white; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Up-arrow */
+
+.up-arrow {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 25px;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    display: block;
+    opacity: 0;
+    color: white;
+    background-color: #F6802F;
+    transition: .5s ease;
+}
+
+.up-arrow:hover {
+    background: var(--second-color);
+    color: #F6802F;
+}
+
+.up-arrow.active {
+    opacity: 1;
+}
+
+/* Contact */
+#contact {
+    min-height: calc(100vh - 97px);
+    display: flex;
+    align-items: center;
+}
+
+#contact img {
+    position: absolute;
+    top: -230px;
+    left: -40px;
+    width: 300px;
+}
+
+#contact form {
+    background-color: var(--main-color);
+    padding: 10px 20px;
+}
+
+#contact button {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+}
