@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Media Queries CSS -->
+     <link rel="stylesheet" href="assets/css/mediaQueries.css">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav" class="navbar  navbar-expand-md py-3 sticky-top shadow-sm">
+        <div class="container">
+            <a href="" class="navbar-brand logo"><img src="assets/images/logo.png" alt=""></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link hover-effect">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link hover-effect">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link hover-effect">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link hover-effect active">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav p-0 m-0">
+                    <li class="nav-item p-0 m-0"><a href="#logInButton"  class="nav-link p-0 m-0" data-bs-toggle="offcanvas"><button class="boxShadow rounded">Log in</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contact us section -->
+    <div id="contact">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 position-relative">
+                    <img src="assets/images/contactBgElement.png" alt="bgelement">
+                    <h1 class="mb-3">Contact Us</h1>
+                    <p class="mb-4">Students can contact the school for any problems using the form beside.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="rounded text-white">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        </div>
+                        <div class="mb-3">
+                          <label for="title" class="form-label">Title</label>
+                          <input type="text" class="form-control" id="title" placeholder="Subject or reason for contact">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="rounded">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- Custom Javascript -->
+    <script src="assets/js/script.js"></script>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
