@@ -251,6 +251,15 @@ html,body {
     color: black;
 } 
 
+/* modified this (made down) */
+#faq .accordion-button::after {
+    transform: rotate(0deg);
+}
+
+#faq .accordion-button[aria-expanded="true"]::after {
+    transform: rotate(180deg); /* Expanded (up) */
+}
+
 /* About Us Section */
 #about {
     min-height: calc(100vh - 97px);
