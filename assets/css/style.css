@@ -222,6 +222,41 @@ html,body {
     margin: 0 auto;
 }
 
+/* Pagination */
+.custom-pagination .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.custom-pagination .page-link {
+  border: none;
+  padding: 0.6rem 1rem;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.custom-pagination .page-link:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 600;
+}
+
+.custom-pagination .page-item.disabled .page-link {
+  background-color: #e0e0e0;
+  color: #aaa;
+  pointer-events: none;
+}
+
 /* FAQ Section Style */
 #faq {
     background-color: var(--second-color);
