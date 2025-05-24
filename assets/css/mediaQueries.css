@@ -56,6 +56,14 @@
         font-size: 40px;
     }
 
+    #home .top-home-content-holder {
+        display: none;
+    }
+
+    #home .bottom-home-content-holder { 
+    display: block;
+    }
+
     #footer {
         height: auto;
     }
