@@ -95,12 +95,11 @@ html,body {
 /* Home Section Style */
 #home {
     background-color: var(--second-color);
-    height: 520px;
     width: 100%;
 }
 
 #home .container, #home .row {
-    height: inherit
+    height: inherit;
 }
 
 #home img {
@@ -130,6 +129,10 @@ html,body {
 
 #home .home-right {
     text-align: right;
+}
+
+#home .bottom-home-content-holder { 
+    display: none;
 }
 
 /* Priorities section style */
